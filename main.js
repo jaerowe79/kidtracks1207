@@ -80,7 +80,7 @@ window.addEventListener("DOMContentLoaded", function(){
         alert("Event Saved");
     }
     function getData(){
-        if(localStorage.length == 0){
+        if(localStorage.length === 0){
             alert("No Events Found, default data was added.");
             autoFillData();
         }
@@ -196,7 +196,7 @@ window.addEventListener("DOMContentLoaded", function(){
     }
     
     function clearLocal(){
-        if(localStorage.length == 0){
+        if(localStorage.length === 0){
             autoFillData();
             alert("No Events Found");
         } else {
